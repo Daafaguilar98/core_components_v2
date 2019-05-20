@@ -20,13 +20,21 @@ export default {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main_color: #333;
+  --text_color: #292b32;
+  --button_color: #333;
+  --button_text_color: #fff;
+  --background_color: #fff;
 }
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
+  background-color: #f2f2f2;
 }
 .materialstyle .g-card {
   background: #fff !important;

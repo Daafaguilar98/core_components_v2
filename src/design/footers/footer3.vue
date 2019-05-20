@@ -109,8 +109,6 @@
 </template>
 
 <script>
-import axios from "axios";
-
 import Footers from "../../logic/footers.js";
 export default {
   mixins: [Footers],

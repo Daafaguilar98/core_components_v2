@@ -1,12 +1,17 @@
 {
-  "name": "core-components",
-  "version": "0.1.0",
-  "private": true,
+  "name": "core-components-beta",
+  "version": "0.1.3",
+  "private": false,
+  "main": "./dist/index.js",
+  "files": [
+    "./dist"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "build:lib": "webpack --config build/webpack.config.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -16,9 +21,11 @@
     "hammerjs": "^2.0.8",
     "image-cloudinary": "^1.2.2",
     "vue": "^2.5.22",
+    "vue-awesome-swiper": "^3.1.3",
     "vue-paginate": "^3.6.0",
     "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "webpack-node-externals": "^1.7.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.5",
@@ -32,7 +39,9 @@
     "babel-jest": "^23.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.5.21"
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack-cli": "^3.3.1"
   },
   "eslintConfig": {
     "root": true,
